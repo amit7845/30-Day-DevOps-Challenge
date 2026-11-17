@@ -1,0 +1,2 @@
+my first linux practical task
+i am learning linux for devops engineering
