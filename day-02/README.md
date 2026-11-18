@@ -41,3 +41,38 @@ sudo -u devuser touch /opt/devops-project/team-file.txt
 ## Result
 
 Successfully created Linux users and groups, configured shared directory permissions, and verified SGID group inheritance.
+
+## Task 3 – Password Management and Account Verification
+
+### Commands Practised
+
+```bash
+sudo passwd -S devuser
+sudo passwd devuser
+sudo chage -l devuser
+sudo passwd -l devuser
+sudo passwd -u devuser
+id devuser
+getent passwd devuser
+```
+
+### Practical Results
+
+- Checked the password status of `devuser`.
+- Set a password for the user.
+- Verified account and password aging information.
+- Locked the user's password.
+- Unlocked the user's password.
+- Verified the final password status as `P`.
+
+### Key Learnings
+
+- `P` indicates a password is set.
+- `L` indicates the password is locked.
+- `passwd -l` locks password authentication.
+- `passwd -u` unlocks password authentication.
+- `chage -l` displays password aging information.
+
+### Result
+
+Successfully practised Linux password management, account verification, password locking and unlocking.
